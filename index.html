@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>javascript</title>
+    <style>
+        .container{
+            margin: auto;
+            width: 500px;  
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <button id="btn">Click here to change background color</button>
+    </div>
+     <script>
+ button =document.getElementById("btn");
+  body=document.body;
+    const  colors=['#5407b2','#0710b2','#1afb21','#daa8dd','#88fbe7','#b37979','#2d0c91','#d4d4db','#2d0c91','#f5f80b','#000000','#f30000','#ff57c4','#54d706','#ff932b','#eaffc2','#ad5656','#ad5656',"#2154a1",'#b4d9e4']
+
+
+       button.addEventListener('click',changeBackground)
+      function changeBackground(){
+         colorsIndex= Math.floor(Math.random()*colors.length)
+    body.style.backgroundColor=colors[colorsIndex]
+}
+     </script>   
+</body>
+</html>
